@@ -1,7 +1,7 @@
-const TossPayment = require('./toss-payment');
+import TossPayment from './toss-payment.js';
 
 // API 키 설정 (실제 사용시 환경변수나 별도 설정 파일에서 관리하세요)
-const API_KEY = 'YOUR_TOSS_API_KEY_HERE';
+const API_KEY = 'test_ck_jExPeJWYVQxODXenMQ5j349R5gvN';
 
 const tossPayment = new TossPayment(API_KEY);
 
@@ -12,7 +12,7 @@ async function runExample() {
     console.log('=== 결제 승인 ===');
     const confirmResult = await tossPayment.confirmPayment(
       'PAYMENT_KEY_HERE',
-      'ORDER_ID_HERE',
+      'XfnYLuUYTJZ542bPrQ7Do',
       15000
     );
     console.log('결제 승인 성공:', confirmResult);
@@ -35,5 +35,5 @@ async function runExample() {
   }
 }
 
-// 예제 실행 (주석 해제 후 사용)
-// runExample();
+// 예제 실행
+runExample();

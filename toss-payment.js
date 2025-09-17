@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 class TossPayment {
   constructor(apiKey) {
@@ -75,4 +75,4 @@ class TossPayment {
   }
 }
 
-module.exports = TossPayment;
+export default TossPayment;
